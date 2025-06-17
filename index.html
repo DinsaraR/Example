@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative AI Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loading-animation">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">Gemini AI</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>Creative AI Assistant</h2>
+                <div class="typing-indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>Hello! I'm your creative AI assistant. How can I help you today?</p>
+                    </div>
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="user-input" placeholder="Type your message here..." autocomplete="off">
+                <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+                <button id="voice-button"><i class="fas fa-microphone"></i></button>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature-card" data-tilt>
+                <i class="fas fa-lightbulb"></i>
+                <h3>Creative Ideas</h3>
+                <p>Get innovative suggestions for your projects</p>
+            </div>
+            <div class="feature-card" data-tilt>
+                <i class="fas fa-code"></i>
+                <h3>Code Help</h3>
+                <p>Programming assistance in multiple languages</p>
+            </div>
+            <div class="feature-card" data-tilt>
+                <i class="fas fa-paint-brush"></i>
+                <h3>Design Tips</h3>
+                <p>Artistic and design recommendations</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Creative AI Chatbot. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
